@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Jeopardy</title>
+    <link rel="stylesheet" href="final-round.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outermost-container">
+      <!-- HEADER-->
+      <header id="header">
+        <h1>FINAL JEOPARDY</h1>
+        <h2 id="player-turn">PLAYER TURN</h2>
+      </header>
+      <!--FINAL CATEGORY-->
+      <div class="category-container">
+        <h2 id="category-name">JAVASCRIPT</h2>
+      </div>
+      <!--FINAL QUESTION-->
+      <div class="question-container">
+        <h3 id="question-header">FINAL QUESTION:</h3>
+        <h4 id="final-question"></h4>
+      </div>
+      <!--BET/ANSWER FORM INPUT FIELDS-->
+      <div class="form-container">
+        <form action="" id="final-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="bet-amount"
+              placeholder="Point bet amount..."
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="player-answer"
+              placeholder="Final answer..."
+            />
+          </div>
+          <!--FORM BUTTONS-->
+          <div class="form-group">
+            <input type="submit" value="BET" id="bet-btn" />
+          </div>
+          <div class="form-group">
+            <input type="submit" value="GUESS" disabled="true" id="guess-btn" />
+          </div>
+        </form>
+      </div>
+       <!--PLAYERS SCORES-->
+    <div class="scores-container">
+      <h4 id="player1-score">Player 1 Score: 0</h4>
+      <h4 id="player2-score">Player 2 Score: 0</h4>
+    </div>
+      <!--FOOTER-->
+      <footer>SDB JEOPARDY 2023</footer>
+      <!-- Do not change the script source. Allows import/export to work. -->
+      <script src="./scripts/final-round.js" type="module"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round 1</title>
+    <link rel="stylesheet" href="round-1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outermost-container">
+      <!--HEADER-->
+      <header id="header">
+        <h1>FIRST ROUND</h1>
+        <h2 id="player-turn">PLAYER TURN</h2>
+      </header>
+      <!--CATEGORY SUBJECT-->
+      <div class="category-container">
+        <h2 id="category-name">JEOPARDY</h2>
+      </div>
+      <!--MODAL SECTION-->
+      <div class="modal-container">
+        <section id="modal" class="modal hidden">
+          <div class="question-container">
+            <h3 id="question">Question</h3>
+          </div>
+        </section>
+      </div>
+      <!--CATEGORY GRID-->
+      <div class="gameboard-grid-container">
+        <div class="category-name">5-LETTER PLACES</div>
+        <div class="category-name">CELEBRITIES</div>
+        <div class="category-name">AMERICANA</div>
+        <div class="category-name">"____ & ____"</div>
+        <div class="category-name">ASTRONOMY</div>
+        <div class="category-name">\"LEFT\", \"RIGHT\" OR \"CENTER\"</div>
+
+        <div class="value v-200 cat-1">200</div>
+        <div class="value v-200 cat-2">200</div>
+        <div class="value v-200 cat-3">200</div>
+        <div class="value v-200 cat-4">200</div>
+        <div class="value v-200 cat-5">200</div>
+        <div class="value v-200 cat-6">200</div>
+
+        <div class="value v-400 cat-1">400</div>
+        <div class="value v-400 cat-2">400</div>
+        <div class="value v-400 cat-3">400</div>
+        <div class="value v-400 cat-4">400</div>
+        <div class="value v-400 cat-5">400</div>
+        <div class="value v-400 cat-6">400</div>
+
+        <div class="value v-600 cat-1">600</div>
+        <div class="value v-600 cat-2">600</div>
+        <div class="value v-600 cat-3">600</div>
+        <div class="value v-600 cat-4">600</div>
+        <div class="value v-600 cat-5">600</div>
+        <div class="value v-600 cat-6">600</div>
+
+        <div class="value v-800 cat-1">800</div>
+        <div class="value v-800 cat-2">800</div>
+        <div class="value v-800 cat-3">800</div>
+        <div class="value v-800 cat-4">800</div>
+        <div class="value v-800 cat-5">800</div>
+        <div class="value v-800 cat-6">800</div>
+
+        <div class="value v-1000 cat-1">1000</div>
+        <div class="value v-1000 cat-2">1000</div>
+        <div class="value v-1000 cat-3">1000</div>
+        <div class="value v-1000 cat-4">1000</div>
+        <div class="value v-1000 cat-5">1000</div>
+        <div class="value v-1000 cat-6">1000</div>
+      </div>
+      <!--PLAYER INPUT FORM-->
+      <div class="form-container-center">
+        <form id="answer-form" action="/" class="form-container form-style">
+          <!--PLAYER INPUT FIELD-->
+          <div class="form-group">
+            <input
+              type="text"
+              id="player-input"
+              placeholder="Enter Your Answer Here..."
+            />
+          </div>
+          <!-- FORM BUTTONS CONTAINER-->
+          <div class="btn-container">
+            <!--GUESS BUTTON-->
+            <div class="form-group">
+              <input
+                type="submit"
+                value="GUESS"
+                class="btn"
+                id="guess-btn"
+                disabled="true"
+              />
+            </div>
+            <!--PASS BUTTON-->
+            <div class="form-group">
+              <input
+                type="submit"
+                value="PASS"
+                class="btn"
+                id="pass-btn"
+                disabled="true"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--PLAYERS SCORES-->
+      <div class="scores-container">
+        <h4 id="player1-score">Player 1 Score: 0</h4>
+        <h4 id="player2-score">Player 2 Score: 0</h4>
+      </div>
+      <!--NEXT ROUND BUTTON-->
+      <div id="nxt-btn-container">
+        <button id="next-round-btn1" disabled="true">NEXT ROUND</button>
+      </div>
+      <!--FOOTER-->
+      <footer>SDB JEOPARDY 2023</footer>
+      <!-- Do not change the script source. Allows import/export to work. -->
+      <script src="./scripts/round-1.js" type="module"></script>
+    </div>
+  </body>
+</html>
